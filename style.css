@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #02609aba;
+}
+.container-fluid {
+  padding: 0;
+}
+.content-section {
+  padding: 4rem 13rem;
+}
+.navbar {
+  padding: 20px 0;
+  opacity: 0.6;
+  background-color: rgb(2, 96, 154);
+}
+.future-events {
+  max-width: 855px;
+  padding: 20px 0;
+}
+.future-events .caption {
+  color: black;
+  line-height: 1.1em;
+  font-size: 86px;
+  font-style: italic;
+  font-family: cursive;
+  font-weight: bold;
+}
+.aboutus,
+.fun-facts {
+  background-color: #3c3d4e;
+}
+.sub-heading span {
+  font-size: 2rem;
+  line-height: 1.1em;
+}
+.marker {
+  width: 65px;
+}
+.photos .card {
+  width: 33.33%;
+}
+.photos .card img {
+  height: 100%;
+}
+
+.numbers {
+  font-size: 55px;
+}
+footer .links {
+  font-size: 14px;
+  color: white;
+}

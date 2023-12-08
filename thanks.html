@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Tech Event</title>
+    <style>
+        body {
+            background-color: #02609aba;
+            color: white;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Following details have been submitted:</h2>
+        <p id="firstName"></p>
+        <p id="lastName"></p>
+        <p id="email"></p>
+        <p id="city"></p>
+        <p id="phone"></p>
+        <h1>Thank You</h1>
+    </section>
+    <script>
+        const searchParams = new URLSearchParams(window.location.search);
+        document.getElementById('firstName').innerText = searchParams.get('firstName')
+        document.getElementById('lastName').innerText = searchParams.get('lastName')
+        document.getElementById('email').innerText = searchParams.get('inputEmail')
+        document.getElementById('city').innerText = searchParams.get('inputCity')
+        document.getElementById('phone').innerText = searchParams.get('phone')
+    </script>
+</body>
+
+</html>
