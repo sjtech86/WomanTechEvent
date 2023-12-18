@@ -16,14 +16,10 @@ body {
   opacity: 0.6;
   background-color: rgb(2, 96, 154);
 }
-.future-events {
-  max-width: 855px;
-  padding: 20px 0;
-}
 .future-events .caption {
   color: black;
   line-height: 1.1em;
-  font-size: 86px;
+  font-size: 6rem;
   font-style: italic;
   font-family: cursive;
   font-weight: bold;
@@ -52,4 +48,35 @@ body {
 footer .links {
   font-size: 14px;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .future-events {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+  .content-section {
+    padding: 2rem 3rem;
+  }
+  .future-events .caption {
+    font-size: 2.8rem;
+  }
+  .numbers {
+    font-size: 2rem;
+  }
+  .fun-facts-numbers {
+    flex-wrap: wrap;
+  }
+  .fun-facts-numbers > div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .future-events .caption {
+    font-size: 2.6rem;
+  }
+  .content-section {
+    padding: 2rem 4rem;
+  }
 }
